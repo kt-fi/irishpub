@@ -23,5 +23,9 @@
         font-size: 1.5rem;;
         padding: 1rem 1rem  3rem 1rem;
         border-left: 3px solid green;
+
+    @media screen and (max-width: 900px){
+        width:100%;
+    }
     }
 }

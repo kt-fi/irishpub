@@ -56,8 +56,8 @@ body {
 }
 @media screen and (max-width: 600px) {
   .header {
-    min-height: 650px;
-    max-height: 650px;
+    min-height: 550px;
+    max-height: 550px;
   }
 }
 .header__bubble {
@@ -88,7 +88,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .header__bubble {
-    top: 485px;
+    top: 400px;
     width: 300px;
     height: 150px;
     min-height: 300px;
@@ -170,6 +170,11 @@ body {
   font-size: 4rem;
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .header__main--text {
+    font-size: 3rem;
+  }
+}
 .header__main--text-head {
   text-shadow: -1px -1px 0 rgb(158, 158, 0), 1px -1px 0 rgb(158, 158, 0), -1px 1px 0 rgb(158, 158, 0), 1px 1px 0 rgb(158, 158, 0);
 }
@@ -229,6 +234,11 @@ body {
   font-size: 1.5rem;
   padding: 1rem 1rem 3rem 1rem;
   border-left: 3px solid green;
+}
+@media screen and (max-width: 900px) {
+  .info__text {
+    width: 100%;
+  }
 }
 
 .menu {
@@ -338,6 +348,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .fa-chevron-left {
+    top: 45%;
     left: 15px;
   }
 }
@@ -356,6 +367,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .fa-chevron-right {
+    top: 45%;
     right: 15px;
   }
 }
@@ -392,6 +404,7 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .contact-form__container--map {
+    margin: 1rem;
     width: 100%;
   }
 }
