@@ -15,8 +15,9 @@
         margin-bottom: 5rem;;
     }
     &__container {
-        
+        position: relative;
        padding:  0 0 2rem 0;
+       overflow: hidden;
     }
 
     &__image {
@@ -73,3 +74,21 @@
 
     }
 }
+
+ 
+.slides-container {
+    height: calc(100vh - 2rem);
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+  }
