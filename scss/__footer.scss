@@ -23,6 +23,7 @@
     &__info {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         &--links {
             text-align: center;
             width: 50%;
