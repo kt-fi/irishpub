@@ -1,0 +1,82 @@
+.menu{
+    background-color: black;
+    padding: 3rem;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1000px;
+    }
+
+    &__header {
+        background-color: white;;
+        display: block;
+        width: max-content;
+        padding: 1rem;
+        font-size: 3rem;;
+        font-family:  'PT Serif', serif;;
+        margin-bottom: 5rem;;
+    }
+
+    &__card {
+        text-align: center;
+
+    &:hover {
+        & > .menu__card--circle{
+                    filter: blur(2px);
+                    transition: 1s;
+                    cursor: pointer;
+             }
+                & > .menu__card--text {
+                    transition: 1s;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                }
+        &--circle {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                border-radius: 100%;;
+                background-size: contain;
+                background-position: center;
+
+            
+
+                &-1 {
+                    background-image: url('https://www.nicepng.com/png/detail/110-1100802_pint-of-guinness-pint-of-guinness-png.png');
+                }
+
+                &-2 {
+                    background-image: url('http://embed.widencdn.net/img/beef/1akcqwmdqs/exact/classic-beef-cheeseburgers-horizontal.tif?keep=c&u=7fueml');
+                }
+
+                &-3 {
+                    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5uVArbEFhwiyxV0swEYuJ1dRR_mMf5tOhAg&usqp=CAU');
+                }
+            }
+
+            &--text {
+                color: white;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+                font-size: 3rem;
+                font-family: 'Roboto Condensed';
+                font-weight: 800;
+               opacity: 0;
+               transform: translateY(-110px);
+
+               &:hover ~ .menu__card--circle {
+                filter: blur(2px);
+                transition: 1s;
+                cursor: pointer;
+               }
+            }
+    }
+
+  
+}
