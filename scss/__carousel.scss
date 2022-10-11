@@ -83,6 +83,11 @@
     padding: 0;
     overflow: hidden;
     scroll-behavior: smooth;
+
+    @media screen and (max-width: 1200px){
+
+        height: auto;
+    }
   }
 
   .slide {
@@ -90,3 +95,4 @@
     height: 100%;
     flex: 1 0 100%;
   }
+  
