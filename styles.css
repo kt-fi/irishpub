@@ -381,7 +381,7 @@ body {
 }
 
 .slides-container {
-  height: calc(100vh - 2rem);
+  height: auto;
   width: 100%;
   display: flex;
   list-style: none;
